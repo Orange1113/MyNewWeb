@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="/js/jquery.min.js" defer></script>
+    <script src="/js/bootstrap.min.js" defer></script>
+    <script src="/js/popper.min.js" defer></script>
+    <script src="/js/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <!-- 欢迎区域 -->
+        <div class="zb welcome-section">
+            <h2><i class="bi bi-stars"></i> 欢迎来到橙子113的个人网站！</h2>
+            <p class="mt-3">这里是我分享编程知识、项目经验和个人思考的地方</p>
+            <div class="quick-links mt-4">
+                <a href="/about.html" class="btn btn-outline-warning"><i class="bi bi-person-circle"></i> 了解我</a>
+                <a href="/programming.html" class="btn btn-outline-warning"><i class="bi bi-code-slash"></i> 查看编程</a>
+                <a href="#projects" class="btn btn-outline-warning"><i class="bi bi-folder2-open"></i> 浏览项目</a>
+            </div>
+        </div>
+        
+        <!-- 今日诗词 -->
+        <div class="zb">
+            <h3><i class="bi bi-book"></i> 今日诗词</h3>
+            <div class="poetry-container">
+                <span id="jinrishici-sentence">正在加载今日诗词....</span>
+                <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+            </div>
+        </div>
+        
+        <!-- 个人简介 -->
+        <div class="zb">
+            <h3><i class="bi bi-person-badge"></i> 个人简介</h3>
+            <div class="profile-container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <div class="avatar-container">
+                            <!-- <img src="/img/avatar.jpg" alt="橙子113头像" class="avatar" onerror="this.src='/img/default-avatar.png'"> -->
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="intro-text">
+                            嗨，我是<strong>橙子113</strong>，一名热爱编程和设计的开发者。我专注于前端开发、UI设计和交互体验，
+                            致力于创造美观且实用的网站和应用程序。
+                        </p>
+                        <p class="intro-text">
+                            我精通HTML、CSS、JavaScript等前端技术，同时也在不断学习Python、C++等编程语言，
+                            希望通过这个网站分享我的学习经验和项目成果。
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">UI设计</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 最新文章 -->
+        <div class="zb">
+            <h3><i class="bi bi-file-earmark-text"></i> 最新文章</h3>
+            <div class="articles-container">
+                <div class="article-card">
+                    <div class="article-date">2023-06-15</div>
+                    <h4 class="article-title">如何优化网站性能</h4>
+                    <p class="article-excerpt">本文将介绍几种提高网站加载速度和性能的方法，包括图片优化、代码压缩和缓存策略等...</p>
+                    <a href="#" class="article-link">阅读全文 <i class="bi bi-arrow-right"></i></a>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-date">2023-05-28</div>
+                    <h4 class="article-title">CSS Grid布局详解</h4>
+                    <p class="article-excerpt">CSS Grid是一种强大的二维布局系统，本文将通过实例详细讲解如何使用Grid创建复杂的网页布局...</p>
+                    <a href="#" class="article-link">阅读全文 <i class="bi bi-arrow-right"></i></a>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-date">2023-04-10</div>
+                    <h4 class="article-title">JavaScript异步编程入门</h4>
+                    <p class="article-excerpt">从回调函数到Promise再到async/await，本文将带你了解JavaScript中异步编程的发展和使用方法...</p>
+                    <a href="#" class="article-link">阅读全文 <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-warning">查看更多文章</a>
+            </div>
+        </div>
+        
+        <!-- 项目展示 -->
+        <div class="zb" id="projects">
+            <h3><i class="bi bi-folder2"></i> 项目展示</h3>
+            <div class="projects-container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <!-- <img src="/img/projects/project1.jpg" alt="项目1" onerror="this.src='/img/default-project.png'"> -->
+                            </div>
+                            <div class="project-info">
+                                <h4>个人网站</h4>
+                                <p>使用HTML、CSS和JavaScript构建的响应式个人网站，展示个人作品和技能。</p>
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <a href="#" class="project-link">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <!-- <img src="/img/projects/project2.jpg" alt="项目2" onerror="this.src='/img/default-project.png'"> -->
+                            </div>
+                            <div class="project-info">
+                                <h4>天气应用</h4>
+                                <p>基于API的天气预报应用，可查询全球各地的天气状况和未来预报。</p>
+                                <div class="project-tags">
+                                    <span>JavaScript</span>
+                                    <span>API</span>
+                                    <span>CSS</span>
+                                </div>
+                                <a href="#" class="project-link">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <!-- <img src="/img/projects/project3.jpg" alt="项目3" onerror="this.src='/img/default-project.png'"> -->
+                            </div>
+                            <div class="project-info">
+                                <h4>笔记应用</h4>
+                                <p>一个简洁的在线笔记应用，支持Markdown格式和云端同步功能。</p>
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <a href="#" class="project-link">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

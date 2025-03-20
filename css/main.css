@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'SmileySans-Oblique';
+    src: url('../fonts/SmileySans-Oblique.ttf') format('truetype');
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-family: 'SmileySans-Oblique', sans-serif;
+    font-weight: 500;
+}
+
+#page-title {
+    font-family: 'SmileySans-Oblique', sans-serif;
+    font-weight: 500;
+}
+
+.navbar-toggler {
+    background: rgba(255, 255, 255, .5) !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background: linear-gradient(to right, #FFA07A, #FF8C00); */
+    background: url(/img/bg/1.svg);
+    min-height: 100vh; /* 改为100vh而不是120vh */
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0 15px;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    padding: 15px 0;
+    color: var(--bs-gray-600);
+    margin-top: auto; /* 确保footer贴合底部 */
+    width: 100%;
+}
+
+/* 社交媒体链接样式 */
+.social-links {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 5px;
+    color: var(--bs-gray-600);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff8c00; /* 橙色，与背景渐变色相匹配 */
+}
+
+.social-links i {
+    font-size: 16px;
+}
+
+main {
+    margin-top: 80px !important;
+    margin: 80px 20px 10px;
+    flex: 1; /* 让main元素占据剩余空间 */
+}
+
+.zb {
+    width: 100%;
+    /* max-width: 100%; */
+    margin: 0 auto;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 24px;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    margin-bottom: 15px;
+    text-align: center;
+    border: 2px solid #88888820;
+    max-width: 1200px; /* 新增最大宽度限制 */
+    margin-bottom: 15px;
+
+}
+
+/* 小于375px */
+
+@media screen and (max-width: 375px) {
+    main {
+        margin: 80px 0 10px;
+    }
+    .zb {
+        width: 100%;
+        border-radius: 0;
+    }
+}
