@@ -39,15 +39,14 @@ body {
 header, footer {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 header {
-    background: rgba(255, 255, 255, 0.8);
     padding: 0 15px;
 }
 
 footer {
-    background: rgba(255, 255, 255, 0.85);
     text-align: center;
     padding: 15px 0;
     color: var(--bs-gray-600);
@@ -109,5 +108,20 @@ main {
     .zb {
         width: 100%;
         border-radius: 0;
+        background: #fff;
+        border: none;
+        border-bottom: 2px solid #88888820;
+        margin-bottom: 0;
+        padding: 15px;
     }
+    body {
+        background: #fff;
+    }
+    header, footer {
+        background: #fff;
+    }
+    main {
+        margin-top: 56px!important;
+    }
+
 }
