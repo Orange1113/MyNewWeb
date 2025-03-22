@@ -103,7 +103,8 @@ main {
 
 @media screen and (max-width: 375px) {
     main {
-        margin: 80px 0 10px;
+        margin: 0;
+        margin-top: 56px!important;
     }
     .zb {
         width: 100%;
@@ -120,8 +121,4 @@ main {
     header, footer {
         background: #fff;
     }
-    main {
-        margin-top: 56px!important;
-    }
-
 }
