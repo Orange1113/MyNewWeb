@@ -39,6 +39,7 @@
 .welcome-section h2 {
     color: #ff8c00;
     font-weight: 600;
+    margin-bottom: 0 !important;
 }
 
 .quick-links {
