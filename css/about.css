@@ -140,24 +140,64 @@
 
 /* 新增样式 - 个人信息卡片 */
 .profile-header {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    align-items: center;  /* 添加垂直居中对齐 */
 }
 
 .profile-avatar {
-  flex-shrink: 0;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 5px solid rgba(255, 140, 0, 0.3);
-  background-color: #f8f9fa;
+    flex: 0 0 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgba(255, 140, 0, 0.3);
+    background-color: #f8f9fa;
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-info .chart {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 超大屏幕两栏布局 */
+@media (min-width: 1200px) {
+    .profile-info .chart {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .profile-avatar {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-info {
+        width: 100%;
+    }
+
+    .profile-info .chart {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .profile-avatar img {
